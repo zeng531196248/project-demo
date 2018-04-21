@@ -16,6 +16,9 @@
 		<junit.version>3.8.1</junit.version>
 		<javax.servlet.version>3.1.0</javax.servlet.version>
 		<mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+		<c3p0.version>0.9.5.2</c3p0.version>
+		<commons-dbcp2.version>2.1.1</commons-dbcp2.version>
+		<druid.version>1.1.2</druid.version>
 	</properties>
 
 	<dependencyManagement>
@@ -34,13 +37,30 @@
 		    <version>${javax.servlet.version}</version>
 		    <scope>provided</scope>
 		</dependency>
-					
+				
+				
+<!--======================================== 数据库方面的Jar ======================================-->	
 		<dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>${mysql-connector-java.version}</version>
 		</dependency>
-				
+		<dependency>
+		    <groupId>com.mchange</groupId>
+		    <artifactId>c3p0</artifactId>
+		    <version>${c3p0.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-dbcp2</artifactId>
+		    <version>${commons-dbcp2.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>druid</artifactId>
+		    <version>${druid.version}</version>
+		</dependency>
+									
 					
 					
 		</dependencies>
